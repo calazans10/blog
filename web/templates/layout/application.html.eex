@@ -13,6 +13,9 @@
 
   <body>
     <main>
+      <p role="alert"><%= get_flash(@conn, :info) %></p>
+      <p role="alert"><%= get_flash(@conn, :error) %></p>
+
       <%= @inner %>
     </main>
 

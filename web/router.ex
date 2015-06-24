@@ -15,7 +15,7 @@ defmodule Blog.Router do
   scope "/admin", Blog.Admin, as: :admin do
     pipe_through :browser
 
-    resources "/posts", PostController
+    resources "/posts", PostController, except: [:show]
   end
 
   scope "/api", Blog do

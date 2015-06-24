@@ -1,0 +1,24 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.errors != [] do %>
+    <p style="color: red">Oops, something went wrong!</p>
+  <% end %>
+
+  <p>
+    <%= label f, :title, "Title" %>
+    <%= text_input f, :title %>
+  </p>
+
+  <p>
+    <%= label f, :published_at, "Published at" %>
+    <%= datetime_select f, :published_at %>
+  </p>
+
+  <p>
+    <%= label f, :body, "Body" %>
+    <%= textarea f, :body %>
+  </p>
+
+  <p>
+    <%= submit "Submit" %>
+  </p>
+<% end %>
