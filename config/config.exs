@@ -9,7 +9,7 @@ use Mix.Config
 config :blog, Blog.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
-  secret_key_base: "",
+  secret_key_base: "KQiZVya4JelErOk1u+GerdEGgYR2X9CVkAse0hlRyaeCjBYMABqU81lc5ArFGJFk",
   debug_errors: false,
   pubsub: [name: Blog.PubSub,
            adapter: Phoenix.PubSub.PG2]
