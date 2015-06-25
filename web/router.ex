@@ -15,6 +15,10 @@ defmodule Blog.Router do
   scope "/admin", Blog.Admin, as: :admin do
     pipe_through :browser
 
+    get  "/",       SessionController, :new
+    post "/login",  SessionController, :create
+    get  "/logout", SessionController, :delete
+
     resources "/posts", PostController, except: [:show]
   end
 
