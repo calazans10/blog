@@ -3,8 +3,6 @@ defmodule Blog.PostController do
 
   alias Blog.Post
 
-  plug :action
-
   def index(conn, _params) do
     posts = Repo.all(Post)
     render conn, posts: posts

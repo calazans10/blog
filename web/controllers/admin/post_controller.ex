@@ -4,7 +4,6 @@ defmodule Blog.Admin.PostController do
   alias Blog.Post
 
   plug :scrub_params, "post" when action in [:create, :update]
-  plug :action
 
   def index(conn, _params) do
     posts = Repo.all(Post)
