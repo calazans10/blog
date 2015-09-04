@@ -1,6 +1,6 @@
 # Blog
 
-A simples blog to start learning [Phoenix](http://www.phoenixframework.org/) and [Elixir](http://elixir-lang.org/).
+A simple blog written in [Phoenix](http://www.phoenixframework.org/) and [Elixir](http://elixir-lang.org/).
 
 To start your new Phoenix application:
 
