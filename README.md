@@ -1,6 +1,6 @@
 # Blog
 
-A simple blog written in [Phoenix](http://www.phoenixframework.org/) and [Elixir](http://elixir-lang.org/).
+A simple blog built with [Elixir](http://elixir-lang.org/) and [Phoenix](http://www.phoenixframework.org/).
 
 To start your new Phoenix application:
 
